@@ -20,6 +20,8 @@ export function Contact() {
     window.location.href = `mailto:dasbromeliassitio@gmail.com?subject=${subject}&body=${body}`;
   };
 
+ 
+
   return (
     <section className="py-20 bg-amber-50">
   <div className="container mx-auto px-4">

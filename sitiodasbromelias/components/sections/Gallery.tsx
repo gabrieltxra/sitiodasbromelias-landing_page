@@ -40,18 +40,18 @@ export function Gallery() {
             <div className="flex">
               {images.map((image, index) => (
                 <motion.div
-                  key={index}
-                  whileHover={{ scale: 1.02 }}
-                  className="flex-[0_0_75%] md:flex-[0_0_33%] px-2"
-                >
-                  <div className="overflow-hidden rounded-xl shadow-lg transition-transform duration-500">
-                    <img
-                      src={image}
-                      alt={`Sítio das Bromélias ${index + 1}`}
-                      className="w-full h-80 object-cover transition-transform duration-300"
-                    />
-                  </div>
-                </motion.div>
+                key={index}
+                className="flex-[0_0_75%] md:flex-[0_0_33%] px-2"
+              >
+                <div className="overflow-hidden rounded-xl shadow-lg transition-transform duration-500">
+                  <img
+                    src={image}
+                    alt={`Sítio das Bromélias ${index + 1}`}
+                    className="w-full h-80 object-cover"
+                  />
+                </div>
+              </motion.div>
+              
               ))}
             </div>
           </div>
