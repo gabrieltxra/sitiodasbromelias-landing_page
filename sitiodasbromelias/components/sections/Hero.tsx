@@ -108,7 +108,7 @@ export function Hero() {
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
       >
         <div className="flex flex-col items-center text-white">
-          <span className="text-sm mb-2">Role para baixo</span>
+          <span className="text-sm mb-2"></span>
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
