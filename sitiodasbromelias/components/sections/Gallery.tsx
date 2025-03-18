@@ -56,7 +56,6 @@ export function Gallery() {
             </div>
           </div>
 
-          {/* Botões */}
           <button
             onClick={scrollPrev}
             className="absolute left-0 top-1/2 -translate-y-1/2 bg-amber-500 text-white p-3 rounded-full shadow-lg hover:bg-amber-600 transition-colors z-10"
