@@ -1,5 +1,6 @@
 "use client";
 
+
 import { motion } from "framer-motion";
 import { WhatsappLogo } from "@phosphor-icons/react";
 
@@ -101,23 +102,21 @@ export function Hero() {
         </motion.div>
       </div>
 
-      <motion.div
+            <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5 }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10"
       >
         <div className="flex flex-col items-center text-white">
-          <span className="text-sm mb-2"></span>
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
-            className="w-1 h-8 bg-white/30 rounded-full relative"
-          >
-            <div className="absolute top-0 w-full h-1/3 bg-white rounded-full animate-bounce" />
-          </motion.div>
+            className="w-0 h-0 border-l-8 border-r-8 border-t-8 border-l-transparent border-r-transparent border-t-white/80"
+          />
         </div>
       </motion.div>
+
     </section>
   );
 }
